@@ -6,11 +6,9 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 11:42:57 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/10 12:06:04 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/10 12:10:08 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_isalpha(int c)
 {
