@@ -6,9 +6,11 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 12:35:21 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/10 12:35:25 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/12 19:43:50 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t count)
 {

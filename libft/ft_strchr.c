@@ -6,9 +6,11 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 17:24:15 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/10 17:24:16 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/12 19:39:15 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 char	*strchr(const char *s, int c)
 {

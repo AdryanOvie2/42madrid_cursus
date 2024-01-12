@@ -6,11 +6,13 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 17:50:54 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/10 17:50:56 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/12 19:45:06 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void bzero(void *s, size_t n)
+#include <strings.h>
+
+void ft_bzero(void *s, size_t n)
 {
 	unsigned	char *ptr;
 

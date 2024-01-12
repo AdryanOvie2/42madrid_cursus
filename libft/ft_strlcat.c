@@ -6,9 +6,11 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 12:30:46 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/10 12:34:27 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/12 19:41:50 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 char	*ft_strlcat(char *dest, const char *src, size_t count)
 {
