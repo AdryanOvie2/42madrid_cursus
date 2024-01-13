@@ -6,13 +6,13 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 11:58:20 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/13 11:58:55 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/13 12:26:46 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-int	memcmp_custom(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*ptr1;
 	const unsigned char	*ptr2;

@@ -6,13 +6,13 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 12:04:14 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/13 12:23:38 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/13 12:26:00 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ctype.h>
 
-int	atoi_custom(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	result;
 	int	sign;
