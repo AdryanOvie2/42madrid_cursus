@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 13:54:54 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/14 14:34:06 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/14 14:40:38 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	calculate_strlen(const char *str)
 	return (len);
 }
 
-size_t	cal_ef_len(const char *str, size_t start, size_t length)
+size_t	cal_ef_len(const char *str, unsigned int start, size_t length)
 {
 	size_t	effective_length;
 
@@ -33,32 +33,32 @@ size_t	cal_ef_len(const char *str, size_t start, size_t length)
 	return (effective_length);
 }
 
-char	*allo_and_copy(const char *str, size_t start, size_t effective_length)
+char	*allo_and_copy(const char *str, unsigned int start, size_t effe_len)
 {
 	char	*sub_str;
 	size_t	i;
 
-	sub_str = (char *)malloc(effective_length + 1);
+	sub_str = (char *)malloc(effe_len + 1);
 	i = 0;
-	while (i < effective_length)
+	while (i < effe_len)
 	{
 		sub_str[i] = str[start + i];
 		i++;
 	}
-	sub_str[effective_length] = '\0';
+	sub_str[effe_len] = '\0';
 	return (sub_str);
 }
 
-char	*ft_substr(const char *str, size_t start, size_t length)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t	str_len;
 	size_t	effective_length;
 
-	if (str == NULL)
+	if (s == NULL)
 		return (NULL);
-	str_len = calculate_strlen(str);
-	if (start >= str_len || length == 0)
+	str_len = calculate_strlen(s);
+	if (start >= str_len || len == 0)
 		return (NULL);
-	effective_length = cal_ef_len(str, start, length);
-	return (allo_and_copy(str, start, effective_length));
+	effective_length = cal_ef_len(s, start, len);
+	return (allo_and_copy(s, start, effective_length));
 }
