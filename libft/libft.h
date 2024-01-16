@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 17:36:04 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/16 12:08:30 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/16 14:00:19 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ char	*ft_strrchr(const char *str, int c);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 #endif
