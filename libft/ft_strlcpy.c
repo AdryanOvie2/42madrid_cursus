@@ -6,11 +6,11 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 12:37:21 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/12 19:43:13 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/16 11:39:09 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aoviedo- <aoviedo-@student.42madrid>       +#+  +:+       +#+        */
+/*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 17:36:04 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/15 17:36:15 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/16 11:27:16 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,8 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <stdio.h>
+# include <ctype.h>
+# include <strings.h>
+# include <string.h>
 
 #endif

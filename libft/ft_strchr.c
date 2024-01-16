@@ -6,11 +6,11 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 17:24:15 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/13 12:27:10 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/16 11:27:19 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

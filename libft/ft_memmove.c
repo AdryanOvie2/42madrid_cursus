@@ -6,11 +6,11 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 20:49:45 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/13 11:27:53 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/16 11:26:46 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 static void	move_left(unsigned char *dest_ptr,
 			const unsigned char *src_ptr,

@@ -6,22 +6,11 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 13:54:54 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/14 14:40:38 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/16 11:40:50 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-size_t	calculate_strlen(const char *str)
-{
-	size_t	len;
-
-	len = 0;
-	while (str[len] != '\0')
-		len++;
-	return (len);
-}
+#include "libft.h"
 
 size_t	cal_ef_len(const char *str, unsigned int start, size_t length)
 {
@@ -56,7 +45,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 
 	if (s == NULL)
 		return (NULL);
-	str_len = calculate_strlen(s);
+	str_len = ft_strlen(s);
 	if (start >= str_len || len == 0)
 		return (NULL);
 	effective_length = cal_ef_len(s, start, len);

@@ -6,11 +6,11 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 12:04:14 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/13 12:26:00 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/16 11:25:16 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

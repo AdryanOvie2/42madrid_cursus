@@ -6,11 +6,11 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 11:31:35 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/13 11:31:36 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/16 11:26:52 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
