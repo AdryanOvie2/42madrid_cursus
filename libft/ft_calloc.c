@@ -14,10 +14,10 @@
 
 void	*ft_calloc(size_t num_elements, size_t element_size)
 {
-	char *array;
+	char	*array;
 
 	array = (char *)malloc(num_elements * element_size);
-	if (array = NULL)
+	if (array == NULL)
 		return (NULL);
 	ft_memset(array, 0, (num_elements * element_size));
 	return (array);
