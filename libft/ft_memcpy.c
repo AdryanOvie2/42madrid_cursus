@@ -28,3 +28,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+int	main(void)
+{
+	char	origen[] = "Hola Mundo!";
+	char	destino[20];
+	ft_memcpy(destino, origen, ft_strlen(origen) + 1);
+	printf("Origen: %s\n", origen);
+	printf("Destino: %s\n", destino);
+}
