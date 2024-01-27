@@ -6,26 +6,39 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 14:01:27 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/16 14:01:28 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 18:33:38 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "ft_memmove.c"
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char *str)
 {
 	size_t	len;
-	char	*mem;
+	size_t	start;
+	size_t	end;
 
-	if (!s1 || !set)
+	len = strlen(str);
+	start = 0;
+	end = len - 1;
+	if (str == NULL)
 		return (NULL);
-	while (strchr(set, *s1) && *s1 != '\0')
-		s1++;
-	if (*s1 == '\0')
-		return (ft_strdup(""));
-	len = ft_strlen(s1);
-	while (ft_strchr(set, s1[len]))
-		len--;
-	mem = ft_substr(s1, 0, len + 1);
-	return (mem);
+	if (len == 0)
+		return (str);
+	while (isspace(str[start]))
+		start++;
+	while (end > start && isspace(str[end]))
+		end--;
+	ft_memmove(str, str + start, end - start + 1);
+	str[end - start + 1] = '\0';
+	return (str);
+}
+
+int main() {
+    char input[] = "   Hola, Mundo!   ";
+    printf("Cadena original: \"%s\"\n", input);
+    ft_strtrim(input);
+    printf("Cadena después de strtrim: \"%s\"\n", input);
+    return (0);
 }
