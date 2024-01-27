@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 11:31:35 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/16 11:26:52 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 14:11:37 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,16 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+/*
+int	main(void)
+{
+	char	buffer[10];
+	size_t	i = 0;
+	ft_memset(buffer, 'X', sizeof(buffer));
+	while (i < sizeof(buffer))
+	{
+		printf("%c ", buffer[i]);
+		i++;
+	}
+	return (0);
+}*/
