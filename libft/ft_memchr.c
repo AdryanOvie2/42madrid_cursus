@@ -6,11 +6,12 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 11:50:20 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/16 11:26:23 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 12:58:07 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "ft_strlen.c"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -26,3 +27,16 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+/*
+int	main(void)
+{
+	const char *str = "Bienvenidos a 42Madrid";
+	char buscar = '4';
+	int len = ft_strlen(str);
+	const char *resultado = ft_memchr(str, buscar, len);
+	if (resultado != NULL)
+		printf("La primera ocurrencia encontrada es: '%c' en la posición: %ld\n", buscar, (long)(resultado - str));
+	else
+		printf("No se encontró '%c' en la cadena.\n", buscar);
+	return (0);
+}*/
