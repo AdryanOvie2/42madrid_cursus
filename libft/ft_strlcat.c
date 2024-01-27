@@ -6,31 +6,30 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 12:30:46 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/27 17:29:55 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 21:44:15 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strlcat(char *dest, const char *src, size_t count)
+size_t	*ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	dest_len;
-	size_t	src_len;
-	size_t	total_len;
-	size_t	chars_to_copy;
+	size_t	len_dst;
+	size_t	j;
 
-	dest_len = ft_strlen(dest);
-	src_len = ft_strlen(src);
-	total_len = dest_len + src_len;
-	chars_to_copy = 0;
-	otro_total = src_len + count;
-
-	if (count <= dest_len)
-		return (src_len + count);
-	chars_to_copy = count - dest_len - 1;
-	ft_strncat(dest + dest_len, src, chars_to_copy);
-	dest[count - 1] = '\0';
-	return (total_len);
+	j = 0;
+	len_dst = ft_strlen(dst);
+	if (dstsize > len_dst)
+	{
+		while ((j + len_dst + 1) < dstsize && src[j] != '\0')
+		{
+			dst[len_dst + j] = src[j];
+			j++;
+		}
+		dst[len_dst + j] = '\0';
+		return (len_dst + ft_strlen(src));
+	}
+	return (dstsize + ft_strlen(src));
 }
 /*
 int	main(void)
