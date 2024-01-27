@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 16:35:20 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/16 11:39:29 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 18:02:35 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,16 @@ char	*ft_strnstr(const char *str, const char *find, size_t len)
 	}
 	return (0);
 }
+/*
+int	main(void)
+{
+	const char *cadena = "Up To You!";
+    const char *subcadena = "To";
+    size_t max_caracteres = 15;
+    char *resultado = ft_strnstr(cadena, subcadena, max_caracteres);
+    if (resultado != NULL)
+        printf("La subcadena fue encontrada en: %s\n", resultado);
+    else
+        printf("La subcadena no fue encontrada.\n");
+    return (0);
+}*/
