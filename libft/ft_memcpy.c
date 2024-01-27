@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 20:11:42 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/16 11:26:33 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 13:10:39 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
+/*
 int	main(void)
 {
 	char	origen[] = "Hola Mundo!";
@@ -36,4 +36,4 @@ int	main(void)
 	ft_memcpy(destino, origen, ft_strlen(origen) + 1);
 	printf("Origen: %s\n", origen);
 	printf("Destino: %s\n", destino);
-}
+}*/
