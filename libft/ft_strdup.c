@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 12:34:13 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/16 11:29:54 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 11:55:52 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,11 @@ char	*ft_strdup(const char *str)
 		strcpy(new_str, str);
 	return (new_str);
 }
+/*
+int	main(void)
+{
+	const char *str = "Hello, 42Madrid";
+	char *newString = ft_strdup(str);
+	printf("Cadena duplicada: %s\n", newString);
+	return (0);
+}*/
