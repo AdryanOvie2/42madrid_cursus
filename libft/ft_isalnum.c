@@ -6,9 +6,11 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 12:13:22 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/10 12:13:25 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 12:33:28 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
@@ -16,3 +18,14 @@ int	ft_isalnum(int c)
 		return (c);
 	return (0);
 }
+/*
+int	main(void)
+{
+	char	ch = '-';
+	char whatis = ft_isalnum(ch);
+	if (whatis)
+		printf("El caracter alpha-numeric es: %c\n", whatis);
+	else
+		printf("No es un caracter alpha-numeric\n");
+	return (0);
+}*/
