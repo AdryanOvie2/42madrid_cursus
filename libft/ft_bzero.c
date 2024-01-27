@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 17:50:54 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/16 11:25:52 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 11:26:53 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-/*	unsigned char	*ptr;
-
-	ptr = (unsigned char *)s;
-	while (n > 0)
-	{
-		*ptr = 0;
-		ptr++;
-		n--;
-	}*/
 	ft_memset(s, 0, n);
 }
