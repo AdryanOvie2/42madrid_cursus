@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 13:54:54 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/16 12:38:38 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 11:42:06 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,20 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	s2[i] = '\0';
 	return (s2);
 }
+/*
+int main(void)
+{
+	const char *original = "Hello, World!";
+	size_t start = 7;
+	size_t len = 5;
+
+	char *subStr = ft_substr(original, start, len);
+
+	if (subStr != NULL)
+	{
+		printf("Subcadena: %s\n", subStr);
+		free(subStr);
+	}
+	else
+		printf("Error\n");
+}*/
