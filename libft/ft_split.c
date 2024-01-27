@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 14:58:48 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/16 16:20:04 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/27 14:48:31 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ static char	**ft_free_matrix(const char **matrix, size_t len_matrix)
 	return (NULL);
 }
 
-char	**ft_split(const char *s, char c)
+char	**ft_split(const char *s, char c, size_t *count)
 {
 	char	**matrix;
 	size_t	len;
@@ -80,4 +80,25 @@ char	**ft_split(const char *s, char c)
 	}
 	matrix[i] = 0;
 	return (matrix);
+}
+
+int	main(void)
+{
+	const char	*orignal = "Hola,42,Madrid";
+	size_t i;
+	size_t count;
+	char **resultado = ft_split(orignal,',', &count);
+	if (resultado != NULL)
+	{
+		printf("Palabras dividas:\n");
+		while (i < count)
+		{
+			printf("%s", resultado[i]);
+			free(resultado[i]);
+		}
+		free(resultado);
+	}
+	else
+		printf("Error al dividir la cadena");
+	return (0);
 }
