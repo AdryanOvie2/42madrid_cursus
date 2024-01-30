@@ -11,34 +11,41 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_memmove.c"
+#include "ft_substr.c"
+#include "ft_strlen.c"
 
-char	*ft_strtrim(char *str)
+static int	ft_isset(char c, const char *set)
 {
-	size_t	len;
-	size_t	start;
-	size_t	end;
-
-	len = strlen(str);
-	start = 0;
-	end = len - 1;
-	if (str == NULL)
-		return (NULL);
-	if (len == 0)
-		return (str);
-	while (isspace(str[start]))
-		start++;
-	while (end > start && isspace(str[end]))
-		end--;
-	ft_memmove(str, str + start, end - start + 1);
-	str[end - start + 1] = '\0';
-	return (str);
-}
-
-int main() {
-    char input[] = "   Hola, Mundo!   ";
-    printf("Cadena original: \"%s\"\n", input);
-    ft_strtrim(input);
-    printf("Cadena después de strtrim: \"%s\"\n", input);
+    while (*set)
+        if (c == *set++)
+            return (1);
     return (0);
 }
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	char	*ret;
+    char	*start;
+    char	*end;
+
+    if (!s1 || !set)
+        return (0);
+    start = (char *)s1;
+    end = start + ft_strlen(s1);
+    while (*start && ft_isset(*start, set))
+        ++start;
+    while (start < end && ft_isset(*(end - 1), set))
+        --end;
+    ret = ft_substr(start, 0, end - start);
+    return (ret);
+}
+/*
+int main(void)
+{
+    char input[] = "o Hola, Mundo!  oh ooo";
+	char set[] = "oh";
+    printf("Cadena original: %s\n", input);
+    char *resul = ft_strtrim(input, set);
+    printf("Cadena después de strtrim: %s\n", resul);
+    return (0);
+}*/
