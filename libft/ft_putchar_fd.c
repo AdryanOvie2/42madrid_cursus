@@ -17,12 +17,7 @@ void	ft_putchar_fd(char c, int fd)
 	write(fd, &c, 1);
 }
 /*
-int	main(void)
+int main(void)
 {
-	const char	*name = "42Madrid";
-	while (*name != '\0')
-	{
-		
-	}
-	return (0);
+	ft_putchar_fd('a', 1);
 }*/
