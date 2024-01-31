@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 20:49:45 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/27 14:03:29 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/31 14:46:16 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,3 +53,22 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		move_right(dest_ptr, src_ptr, n);
 	return (dest);
 }
+/*
+int main(void)
+{
+	char str[] = "hola42Madrid";
+	char str2[] = "Up To You";
+	char *str3 = str;
+	char *str4 = str2;
+	printf("original: %s\n", str);
+	printf("original: %s\n", str2);
+	ft_memmove(str, str + 4, 4);
+	printf("ft_memmove: %s\n", str);
+	memmove(str2, str2 + 4, 4);
+	printf("memmove: %s\n", str2);
+	ft_memmove(str3, str3 + 4, 3);
+	printf("ft_memmove: %s\n", str3);
+	memmove(str4, str4 + 3, 4);
+	printf("memmove: %s\n", str4);
+	return (0);
+}*/
