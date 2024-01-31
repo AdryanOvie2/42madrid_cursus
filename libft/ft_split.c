@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 14:58:48 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/27 14:48:31 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/31 15:03:01 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ static char	**ft_free_matrix(const char **matrix, size_t len_matrix)
 	return (NULL);
 }
 
-char	**ft_split(const char *s, char c, size_t *count)
+char	**ft_split(const char *s, char c)
 {
 	char	**matrix;
 	size_t	len;
@@ -75,7 +75,7 @@ char	**ft_split(const char *s, char c, size_t *count)
 		if (!matrix[i])
 			return (ft_free_matrix((const char **)matrix, len));
 		ft_strlcpy(matrix[i], s, sl + 1);
-		s = (ft_strchr(s, (int)c));
+		s = (ft_strrchr(s, (int)c));
 		i++;
 	}
 	matrix[i] = 0;
@@ -85,9 +85,9 @@ char	**ft_split(const char *s, char c, size_t *count)
 int	main(void)
 {
 	const char	*orignal = "Hola,42,Madrid";
-	size_t i;
-	size_t count;
-	char **resultado = ft_split(orignal,',', &count);
+	size_t i = 0;
+	size_t count = ft_numstring(orignal, ','); // Initialize count with the value returned by ft_numstring
+	char **resultado = ft_split(orignal,',');
 	if (resultado != NULL)
 	{
 		printf("Palabras dividas:\n");
