@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 16:23:55 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/27 12:42:19 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/31 15:27:45 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,3 +62,15 @@ char	*ft_itoa(int n)
 	}
 	return (strnum);
 }
+/*
+int main(void)
+{
+	printf("%s\n", ft_itoa(0));
+	printf("%s\n", ft_itoa(-2147483648));
+	printf("%s\n", ft_itoa(2147483647));
+	printf("%s\n", ft_itoa(2147483646));
+	printf("%s\n", ft_itoa(-2147483647));
+	printf("%s\n", ft_itoa(-2147483646));
+	printf("%s\n", ft_itoa(1));
+	return (0);
+}*/
