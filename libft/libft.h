@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 17:36:04 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/27 18:31:13 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/31 15:04:28 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,5 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
-//char	*strncat(char *dest, const char *src, size_t n);
 
 #endif
