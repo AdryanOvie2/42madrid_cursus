@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_strlen.c"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -35,7 +34,8 @@ int	main(void)
 	int len = ft_strlen(str);
 	const char *resultado = ft_memchr(str, buscar, len);
 	if (resultado != NULL)
-		printf("La primera ocurrencia encontrada es: '%c' en la posición: %ld\n", buscar, (long)(resultado - str));
+		printf("La primera ocurrencia encontrada es: '%c' en la posición: %ld\n",
+	       	buscar, (long)(resultado - str));
 	else
 		printf("No se encontró '%c' en la cadena.\n", buscar);
 	return (0);
