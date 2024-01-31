@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 22:16:36 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/27 14:18:17 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/31 14:35:27 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,9 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
+/*
+int main(void)
+{
+	char *str = "hola42Madrid";
+	ft_putstr_fd(str, 1);
+}*/
