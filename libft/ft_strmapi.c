@@ -6,11 +6,17 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 16:27:22 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/27 17:48:17 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/01/31 14:15:36 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static char	ft_upper(unsigned int i, char c)
+{
+	i += c;
+	return (c - 32);
+}
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -31,3 +37,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	newstr[i] = '\0';
 	return (newstr);
 }
+/*
+int	main(void)
+{
+	char *str = "hola";
+	char *str2 = ft_strmapi(str, &ft_upper);
+	printf("%s\n", str2);
+}*/
