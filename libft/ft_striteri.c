@@ -12,12 +12,6 @@
 
 #include "libft.h"
 
-static void	ft_putchar(unsigned int i, char *c)
-{
-	i += *c;
-	write(1, c, 1);
-}
-
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
@@ -33,6 +27,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 /*
+static void	ft_putchar(unsigned int i, char *c)
+{
+	i += *c;
+	write(1, c, 1);
+}
+
 int main(void)
 {
     char *str = "hola42Madrid";
