@@ -25,7 +25,7 @@ void	*ft_calloc(size_t num_elements, size_t element_size)
 /*
 int	main(void)
 {
-	printf("%s\n", (char *) ft_calloc(5, 4));
+	printf("%s\n", (char *) ft_calloc(5, 4)); 
 	printf("%p", (void *) '\0');
 	return (0);
 }*/
