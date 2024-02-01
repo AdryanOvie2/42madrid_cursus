@@ -22,7 +22,7 @@ int	ft_isalnum(int c)
 int	main(void)
 {
 	char	ch = '-';
-	char whatis = ft_isalnum(ch);
+	char whatis = ft_isalnum(ch); 
 	if (whatis)
 		printf("El caracter alpha-numeric es: %c\n", whatis);
 	else
