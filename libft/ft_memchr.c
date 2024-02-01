@@ -30,7 +30,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 int	main(void)
 {
 	const char *str = "Bienvenidos a 42Madrid";
-	char buscar = '4';
+	char buscar = '4'; 
 	int len = ft_strlen(str);
 	const char *resultado = ft_memchr(str, buscar, len);
 	if (resultado != NULL)
