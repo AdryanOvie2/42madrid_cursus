@@ -12,12 +12,6 @@
 
 #include "libft.h"
 
-static char	ft_upper(unsigned int i, char c)
-{
-	i += c;
-	return (c - 32);
-}
-
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*newstr;
@@ -38,6 +32,12 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (newstr);
 }
 /*
+static char	ft_upper(unsigned int i, char c)
+{
+	i += c;
+	return (c - 32);
+}
+
 int	main(void)
 {
 	char *str = "hola";
