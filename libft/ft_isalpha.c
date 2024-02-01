@@ -24,7 +24,7 @@ int	main(void)
 	char	ch = 70;
 	char whatis = ft_isalpha(ch);
 	if (whatis)
-		printf("El caracter alpha es: %c\n", whatis);
+		printf("El caracter alpha es: %c\n", whatis); 
 	else
 		printf("No es un caracter alpha\n");
 	return (0);
