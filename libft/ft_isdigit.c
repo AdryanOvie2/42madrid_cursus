@@ -24,7 +24,7 @@ int	main(void)
 	char	ch = 50;
 	char whatis = ft_isdigit(ch);
 	if (whatis)
-		printf("El caracter digit es: %c\n", whatis);
+		printf("El caracter digit es: %c\n", whatis); 
 	else
 		printf("No es un caracter digit\n");
 	return (0);
