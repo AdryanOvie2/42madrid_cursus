@@ -32,7 +32,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 /*
 int	main(void)
 {
-	const char	*str1 = "Hello";
+	const char	*str1 = "Hello"; 
 	const char	*str2 = "Hella";
 	int	cmp = ft_memcmp(str1, str2, 5);
 	if (cmp == 0)
