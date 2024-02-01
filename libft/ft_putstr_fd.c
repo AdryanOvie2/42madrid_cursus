@@ -28,6 +28,6 @@ void	ft_putstr_fd(char *s, int fd)
 /*
 int main(void)
 {
-	char *str = "hola42Madrid";
+	char *str = "hola42Madrid"; 
 	ft_putstr_fd(str, 1);
 }*/
