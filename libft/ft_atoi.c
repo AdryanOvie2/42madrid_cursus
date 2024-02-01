@@ -39,7 +39,7 @@ int	ft_atoi(const char *str)
 int main()
 {
     const char *numero_str = "12345";
-    int numero = atoi(numero_str);
+    int numero = atoi(numero_str); 
     printf("El número convertido es: %d\n", numero);
     return (0);
 }*/
