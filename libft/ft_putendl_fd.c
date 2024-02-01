@@ -20,6 +20,6 @@ void	ft_putendl_fd(char *s, int fd)
 /*
 int main(void)
 {
-	char *str = "hola42Madrid";
+	char *str = "hola42Madrid"; 
 	ft_putendl_fd(str, 1);
 }*/
