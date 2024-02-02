@@ -6,7 +6,7 @@
 #    By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/01 23:58:16 by aoviedo-          #+#    #+#              #
-#    Updated: 2024/02/01 23:58:18 by aoviedo-         ###   ########.fr        #
+#    Updated: 2024/02/02 16:30:38 by aoviedo-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ ft_memcmp.c \
 ft_memcpy.c \
 ft_memmove.c \
 ft_memset.c \
+ft_split.c \
 ft_strchr.c \
 ft_strdup.c \
 ft_strlcat.c \
