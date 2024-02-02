@@ -6,87 +6,64 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 14:58:48 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/01/31 15:03:01 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/02/02 16:29:23 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_numstring(const char *s, char c)
+static size_t	ft_toklen(const char *s, char c)
 {
-	size_t	count;
-	size_t	flag;
+	size_t	ret;
 
-	count = 0;
-	flag = 0;
+	ret = 0;
+	while (*s)
+	{
+		if (*s != c)
+		{
+			++ret;
+			while (*s && *s != c)
+				++s;
+		}
+		else
+			++s;
+	}
+	return (ret);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**ret;
+	size_t	i;
+	size_t	len;
+
 	if (!s)
 		return (0);
-	while (*s != '\0')
-	{
-		if (*s == c)
-			flag = 0;
-		else if (flag == 0)
-		{
-			flag = 1;
-			count++;
-		}
-		s++;
-	}
-	return (count);
-}
-
-static size_t	ft_numchar(const char *s, char c)
-{
-	size_t	count;
-
-	count = 0;
-	while (s[count] != c && s[count] != '\0')
-		count++;
-	return (count);
-}
-
-static char	**ft_free_matrix(const char **matrix, size_t len_matrix)
-{
-	while (len_matrix--)
-		free((void *)matrix[len_matrix]);
-	free(matrix);
-	return (NULL);
-}
-
-char	**ft_split(const char *s, char c)
-{
-	char	**matrix;
-	size_t	len;
-	size_t	i;
-	size_t	sl;
-
 	i = 0;
-	sl = 0;
-	len = ft_numstring(s, c);
-	matrix = (char **)malloc(sizeof(char *) * (len + 1));
-	if (!matrix)
-		return (NULL);
-	while (i < len)
+	ret = malloc(sizeof(char *) * (ft_toklen(s, c) + 1));
+	if (!ret)
+		return (0);
+	while (*s)
 	{
-		while (*s == c)
-			s++;
-		sl = ft_numchar((const char *)s, c);
-		matrix[i] = (char *)malloc(sizeof(char) * sl + 1);
-		if (!matrix[i])
-			return (ft_free_matrix((const char **)matrix, len));
-		ft_strlcpy(matrix[i], s, sl + 1);
-		s = (ft_strrchr(s, (int)c));
-		i++;
+		if (*s != c)
+		{
+			len = 0;
+			while (*s && *s != c && ++len)
+				++s;
+			ret[i++] = ft_substr(s - len, 0, len);
+		}
+		else
+			++s;
 	}
-	matrix[i] = 0;
-	return (matrix);
+	ret[i] = 0;
+	return (ret);
 }
-
+/*
 int	main(void)
 {
 	const char	*orignal = "Hola,42,Madrid";
 	size_t i = 0;
-	size_t count = ft_numstring(orignal, ','); // Initialize count with the value returned by ft_numstring
+	size_t count = ft_numstring(orignal, ',');
 	char **resultado = ft_split(orignal,',');
 	if (resultado != NULL)
 	{
@@ -101,4 +78,4 @@ int	main(void)
 	else
 		printf("Error al dividir la cadena");
 	return (0);
-}
+}*/
