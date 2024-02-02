@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 17:24:15 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/02/01 23:53:53 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/02/02 15:13:08 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,18 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != '\0')
+	char	*cs;
+
+	cs = (char *)s;
+	while (*cs)
 	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s++;
+		if (*cs == (char)c)
+			return (cs);
+		else
+			cs++;
 	}
-	if (*s == (char)c)
-		return ((char *)s);
+	if (*cs == (char)c)
+		return (cs);
 	return (NULL);
 }
 /*
