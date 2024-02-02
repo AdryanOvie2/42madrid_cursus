@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 14:58:48 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/02/02 16:29:23 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/02/02 18:21:28 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,23 +59,15 @@ char	**ft_split(char const *s, char c)
 	return (ret);
 }
 /*
-int	main(void)
+int main(void)
 {
-	const char	*orignal = "Hola,42,Madrid";
-	size_t i = 0;
-	size_t count = ft_numstring(orignal, ',');
-	char **resultado = ft_split(orignal,',');
-	if (resultado != NULL)
+	char *s = "hola que tal";
+	char c = ' ';
+	char **ret = ft_split(s, c);
+	int i = 0;
+	while (ret[i])
 	{
-		printf("Palabras dividas:\n");
-		while (i < count)
-		{
-			printf("%s", resultado[i]);
-			free(resultado[i]);
-		}
-		free(resultado);
+		printf("%s\n", ret[i]);
+		i++;
 	}
-	else
-		printf("Error al dividir la cadena");
-	return (0);
 }*/
