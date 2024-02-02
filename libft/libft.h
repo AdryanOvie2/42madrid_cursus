@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 17:36:04 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/02/02 15:10:57 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/02/02 15:58:17 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t count);
-char	*ft_strnstr(const char *str, const char *find, size_t len);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
