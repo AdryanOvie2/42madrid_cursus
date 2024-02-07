@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 15:19:07 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/02/07 15:19:29 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/02/07 16:08:38 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-    t_list	*temp;
+	t_list	*temp;
 
-    if (!*lst)
-    {
-        *lst = new;
-        return ;
-    }
-    temp = ft_lstlast(*lst);
-    temp->next = new;
+	if (!*lst)
+	{
+		*lst = new;
+		return ;
+	}
+	temp = ft_lstlast(*lst);
+	temp->next = new;
 }
 /*
 int main(void)

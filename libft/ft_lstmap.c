@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 15:32:48 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/02/07 15:33:02 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/02/07 17:39:52 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,27 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-    t_list	*new;
-    t_list	*temp;
+	t_list	*new;
+	t_list	*temp;
+	void	*buffer;
 
-    if (!lst)
-        return (NULL);
-    new = ft_lstnew(f(lst->content));
-    if (!new)
-        return (NULL);
-    lst = lst->next;
-    while (lst)
-    {
-        temp = ft_lstnew(f(lst->content));
-        if (!temp)
-        {
-            ft_lstclear(&new, del);
-            return (NULL);
-        }
-        ft_lstadd_back(&new, temp);
-        lst = lst->next;
-    }
-    return (new);
+	if (!lst || !f || !del)
+		return (0);
+	new = NULL;
+	while (lst)
+	{
+		buffer = f(lst->content);
+		temp = ft_lstnew(buffer);
+		if (!temp)
+		{
+			del(buffer);
+			ft_lstclear(&new, (*del));
+			return (new);
+		}
+		ft_lstadd_back(&new, temp);
+		lst = lst->next;
+	}
+	return (new);
 }
 /*
 int main(void)

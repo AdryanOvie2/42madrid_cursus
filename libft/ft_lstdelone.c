@@ -6,7 +6,7 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 15:25:39 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/02/07 15:26:10 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/02/07 16:16:23 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-    del(lst->content);
-    free(lst);
+	del(lst->content);
+	free(lst);
 }
 /*
 int main(void)

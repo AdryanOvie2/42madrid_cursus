@@ -6,26 +6,25 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 15:10:25 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/02/07 15:10:30 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/02/07 16:04:59 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
 int	ft_lstsize(t_list *lst)
 {
-    int		i;
-    t_list	*temp;
+	int		i;
+	t_list	*temp;
 
-    i = 0;
-    temp = lst;
-    while (temp)
-    {
-        temp = temp->next;
-        i++;
-    }
-    return (i);
+	i = 0;
+	temp = lst;
+	while (temp)
+	{
+		temp = temp->next;
+		i++;
+	}
+	return (i);
 }
 /*
 int main(void)

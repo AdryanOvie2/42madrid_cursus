@@ -6,22 +6,22 @@
 /*   By: aoviedo- <aoviedo-@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 13:02:07 by aoviedo-          #+#    #+#             */
-/*   Updated: 2024/02/07 13:02:17 by aoviedo-         ###   ########.fr       */
+/*   Updated: 2024/02/07 15:59:21 by aoviedo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list    *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-    t_list	*nodo;
+	t_list	*nodo;
 
-    nodo = malloc(sizeof(t_list));
-    if (!nodo)
-        return (0);
-    nodo->content = content;
-    nodo->next = NULL;
-    return (nodo);
+	nodo = malloc(sizeof(t_list));
+	if (!nodo)
+		return (0);
+	nodo->content = content;
+	nodo->next = NULL;
+	return (nodo);
 }
 /*
 int main(void)
