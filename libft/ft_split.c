@@ -12,6 +12,20 @@
 
 #include "libft.h"
 
+static char	**ft_free(char **str, size_t count)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < count)
+	{
+		free(str[i]);
+		i++;
+	}
+	free(str);
+	return (NULL);
+}
+
 static size_t	ft_toklen(const char *s, char c)
 {
 	size_t	ret;
@@ -31,18 +45,24 @@ static size_t	ft_toklen(const char *s, char c)
 	return (ret);
 }
 
+static int	ft_validate(char const *s)
+{
+	if (!s)
+		return (0);
+	return (1);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**ret;
 	size_t	i;
 	size_t	len;
 
-	if (!s)
-		return (0);
+	ft_validate(s);
 	i = 0;
 	ret = malloc(sizeof(char *) * (ft_toklen(s, c) + 1));
 	if (!ret)
-		return (0);
+		return (NULL);
 	while (*s)
 	{
 		if (*s != c)
@@ -51,6 +71,8 @@ char	**ft_split(char const *s, char c)
 			while (*s && *s != c && ++len)
 				++s;
 			ret[i++] = ft_substr(s - len, 0, len);
+			if (!ret[i - 1])
+				return (ft_free(ret, i - 1));
 		}
 		else
 			++s;
