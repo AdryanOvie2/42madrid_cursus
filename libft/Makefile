@@ -51,12 +51,18 @@ ft_putnbr_fd.c \
 ft_strmapi.c \
 ft_striteri.c
 
+BONUS = ft_lstnew.c \
+
 OBJ = $(SRC:.c=.o)
+BONUS_OBJ = $(BONUS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar r $(NAME) $(OBJ)
+
+Bonus: $(BONUS_OBJ)
+	ar r $(NAME) $(BONUS_OBJ)
 
 clean:
 	rm -f $(OBJ)
