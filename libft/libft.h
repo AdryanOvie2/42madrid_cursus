@@ -21,6 +21,12 @@
 # include <strings.h>
 # include <string.h>
 
+typedef struct s_list
+{
+	void			*context;
+	struct s_list	*next;
+}					t_list;
+
 int		ft_isascii(int c);
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
