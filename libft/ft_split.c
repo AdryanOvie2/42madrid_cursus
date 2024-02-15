@@ -86,10 +86,7 @@ int main(void)
 	char *s = "hola que tal";
 	char c = ' ';
 	char **ret = ft_split(s, c);
-	int i = 0;
-	while (ret[i])
-	{
-		printf("%s\n", ret[i]);
-		i++;
-	}
+ printf("%s", ret[0]);
+ printf("%s", ret[1]);
+ printf("%s", ret[2]);
 }*/
